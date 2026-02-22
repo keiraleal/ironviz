@@ -14,10 +14,9 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 @st.cache_data
 def load_data():
     org = pd.read_csv(os.path.join(OUTPUT_DIR, "org_stats_reliable.csv"))
-    grants = pd.read_csv(os.path.join(OUTPUT_DIR, "grant_stats.csv"))
-    return org, grants
+    return org
 
-org_raw, grants = load_data()
+org_raw = load_data()
 
 # Filter to valid cost-per-impact rows
 org = org_raw[org_raw["cost_per_impact"].notna() & (org_raw["cost_per_impact"] > 0)].copy()
