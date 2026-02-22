@@ -209,4 +209,6 @@ with col2:
 st.divider()
 st.markdown("""
 We consider the average relative citations per field (RCF) of each institution. We then calculate the cost per impact, or the RCF divided by the total funding. We realize the cost per impact does not increase linearly per funding: a 10x increase in funding leads to 1.8x increase in cost per impact. While the inefficiencies grow slower than the funding itself, larger institutions still are generally less efficient dollar-for-dollar.
+
+Carnegie Mellon University sits above our regression line, indicating it's cost per impact is higher than expected for the amount of funding it receives. CMU's research dollars are used less efficiently (citation-wise) compared to peer institutions.
 """)
